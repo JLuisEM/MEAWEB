@@ -7,20 +7,60 @@
     <title>ME&Asociados....</title>
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     <script src="js/prefixfree.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.cycle.all.min.js"></script>
+
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
     <script src="js/scripts.js"></script>
+
+
+<script type="text/javascript">
+
+function slideSwitch() {
+     var $active = $('#slideshow DIV.active');
+
+     if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+     // use this to pull the divs in the order they appear in the markup
+     var $next =  $active.next().length ? $active.next()
+         : $('#slideshow DIV:first');
+
+     // uncomment below to pull the divs randomly
+     // var $sibs  = $active.siblings();
+     // var rndNum = Math.floor(Math.random() * $sibs.length );
+     // var $next  = $( $sibs[ rndNum ] );
+
+
+     $active.addClass('last-active');
+
+     $next.css({opacity: 0.0})
+         .addClass('active')
+         .animate({opacity: 1.0}, 1000, function() {
+             $active.removeClass('active last-active');
+         });
+ }
+
+ $(function() {
+     setInterval( "slideSwitch()", 5000 );
+ });
+
+ </script>
+
+
+
+
   </head>
 
   <body>
     <section id="Conteiner">
-    <nav>
+    <nav id="Navbar">
       <ul>
-          <li>SERVICE</li>
-          <li>HOME</li>
-          <li>CONTACT</li>
+          <li id="ser"><a href="#">SERVICIOS</a></li>
+          <li><a href="#"><figure id="logo"></figure></a></li>
+          <li id="cont"><a id="CONTACTENOS" href="#">CONTACTENOS</a></li>
       </ul>
     </nav><!-- END nav -->
 
@@ -28,23 +68,56 @@
       <div id="ME">M.E.</div>
       <div id="Y">&</div>
       <div id="Asociados">Asociados</div>
-    </header><!-- END header -->
+      <div id="AYC">Auditores Consultores</div>
+
+
+<div id="slideshow">
+    <div class="active">
+        <img src="image1.jpg" />
+        
+    </div>
+    
+    <div>
+        <img src="image2.jpg" />
+        
+    </div>
+    
+    <div>
+        <img src="image3.jpg" />
+        
+    </div>
+    
+    <div>
+        <img src="image4.jpg" />
+        
+    </div>
+    
+</div>
+
 
     <section id = "Links">
-      <div>Link1</div>
-      <div>Link2</div>
-      <div>Link3</div>
-      <div>Link4</div>      
-      <div>Link5</div>
-      <div>Link6</div>
-      <div>Link7</div>
-      <div>Link8</div>
+      <div id="Link1"><a href="#"></a></div>
+      <div id="Link2"><a href="#"></a></div>
+      <div id="Link3"><a href="#"></a></div>
+      <div id="Link4"><a href="#"></a></div>      
+      <div id="Link5"><a href="#"></a></div>
+      <div id="Link6"><a href="#"></a></div>
+      <div id="Link7"><a href="#"></a></div>
     </section><!-- END Link Section -->
+
+
+    </header><!-- END header -->
+
+
     </section><!-- END Conteiner Section -->
 
     <footer>
       <div>Montenegro Escobar y Asociados, S.A. de C.V.</div>
     </footer><!-- END footer -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 
   </body>
 
