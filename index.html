@@ -5,57 +5,22 @@
   <head>
     <meta charset="UTF-8">
     <title>ME&Asociados....</title>
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-    <script src="js/prefixfree.min.js"></script>
+    <script src="JS/prefixfree.min.js"></script>
 
-<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
-
-    <script src="js/scripts.js"></script>
-
-
-<script type="text/javascript">
-
-function slideSwitch() {
-     var $active = $('#slideshow DIV.active');
-
-     if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
-
-     // use this to pull the divs in the order they appear in the markup
-     var $next =  $active.next().length ? $active.next()
-         : $('#slideshow DIV:first');
-
-     // uncomment below to pull the divs randomly
-     // var $sibs  = $active.siblings();
-     // var rndNum = Math.floor(Math.random() * $sibs.length );
-     // var $next  = $( $sibs[ rndNum ] );
-
-
-     $active.addClass('last-active');
-
-     $next.css({opacity: 0.0})
-         .addClass('active')
-         .animate({opacity: 1.0}, 1000, function() {
-             $active.removeClass('active last-active');
-         });
- }
-
- $(function() {
-     setInterval( "slideSwitch()", 5000 );
- });
-
- </script>
-
-
+    
+    <link rel="stylesheet" href="../CSS/slidorion.css" />
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,700' rel='stylesheet' type='text/css'>
 
 
   </head>
 
   <body>
-    <section id="Conteiner">
+
     <nav id="Navbar">
       <ul>
           <li id="ser"><a href="#">SERVICIOS</a></li>
@@ -65,58 +30,77 @@ function slideSwitch() {
     </nav><!-- END nav -->
 
     <header>
-      <div id="ME">M.E.</div>
-      <div id="Y">&</div>
-      <div id="Asociados">Asociados</div>
-      <div id="AYC">Auditores Consultores</div>
+          <div id="ME">M.E.</div>
+          <div id="Y">&</div>
+          <div id="Asociados">Asociados</div>
+          <div id="AYC">Auditores Consultores</div>
+    </header><!-- END header -->
+
+    <section id="Conteiner">
 
 
-<div id="slideshow">
-    <div class="active">
-        <img src="image1.jpg" />
-        
+<div id="slidorion" class="slidorion">
+    <div class="slider">
+      <div class="slide"><img src="../IMG/pres1.jpg" /></div>
+      <div class="slide"><img src="../IMG/pres2.jpg" /></div>
+      <div class="slide"><img src="../IMG/pres3.jpg" /></div>
     </div>
-    
-    <div>
-        <img src="image2.jpg" />
-        
+
+    <div class="accordion">
+      <div class="header">Mision y Vision</div>
+      <div class="content">
+        <p>Muhammad Ali (born Cassius Marcellus Clay, Jr.) is an American former professional boxer, philanthropist and social activist. Nicknamed "The Greatest", and widely considered the best heavyweight of all-time, Ali was involved in several historic boxing matches.</p>
+        <p>Ali become the first and only three-time lineal World Heavyweight Champion.</p>
+      </div>
+      <div class="header">Experiencia y Calidad</div>
+      <div class="content">
+        <p>Usain Bolt is a Jamaican sprinter widely regarded as the fastest person ever. He is the first man to hold both the 100 and 200 metres world records since automatic time measurements became mandatory in 1977.</p>
+        <p>Ali become the first and only three-time lineal World Heavyweight Champion.</p>
+      </div>
+      <div class="header">Integridad y Profecionalismo</div>
+      <div class="content">
+        <p>Michael Jeffrey Jordan (MJ), is an American former professional basketball player, entrepreneur, and majority owner and chairman of the Charlotte Bobcats.</p>
+        <p>MJ's individual accolades and accomplishments include five MVP awards, fourteen NBA All-Star Game appearances and many more. He was inducted into the Basketball Hall of Fame in 2009.</p>
+      </div>
     </div>
-    
-    <div>
-        <img src="image3.jpg" />
-        
-    </div>
-    
-    <div>
-        <img src="image4.jpg" />
-        
-    </div>
-    
-</div>
+  </div>
 
 
     <section id = "Links">
-      <div id="Link1"><a href="#"></a></div>
-      <div id="Link2"><a href="#"></a></div>
-      <div id="Link3"><a href="#"></a></div>
-      <div id="Link4"><a href="#"></a></div>      
-      <div id="Link5"><a href="#"></a></div>
-      <div id="Link6"><a href="#"></a></div>
-      <div id="Link7"><a href="#"></a></div>
+
+      <a href="http://www.asamblea.gob.sv/" id="Link1"></a>
+      <a href="http://www.bcr.gob.sv/" id="Link2"></a>
+      <a href="http://www.cortedecuentas.gob.sv/" id="Link3"></a>
+      <a href="http://www.csj.gob.sv/" id="Link4"></a>
+      <a href="http://www.mh.gob.sv/" id="Link5"></a>
+      <a href="http://www.minec.gob.sv/" id="Link6"></a>
+      <a href="http://www.mtps.gob.sv/" id="Link7"></a>
+
     </section><!-- END Link Section -->
 
 
-    </header><!-- END header -->
+
 
 
     </section><!-- END Conteiner Section -->
 
     <footer>
       <div>Montenegro Escobar y Asociados, S.A. de C.V.</div>
+      <div id="PW">Powered by <a href="http://www.pyrolitesystems.com/">PyroLite Systems</a></div>
     </footer><!-- END footer -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+  <script src="../JS/jquery.js"></script>
+  <script src="../JS/jquery.easing.js"></script>
+  <script src="../JS/jquery.slidorion.js"></script>
+
+  <script>
+  $(function() {
+    $('#slidorion').slidorion();
+  });
+  </script>
 
 
   </body>
