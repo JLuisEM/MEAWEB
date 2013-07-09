@@ -4,79 +4,98 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>ME&Asociados....</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Montenegro Escobar y Asociados, Auditores Consultores...</title>
+
     <link rel="stylesheet" href="CSS/estilos.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/responsiveslides.css">
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-    
+    <script src="JS/jquery.js"></script>          
+    <script src="JS/responsiveslides.js"></script>
     <script src="JS/prefixfree.min.js"></script>
 
-    
-    <link rel="stylesheet" href="../CSS/slidorion.css" />
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" >
+    <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+      
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
 
+        // Slideshow 1
+        $("#slider1").responsiveSlides({
+          maxwidth: 800,
+          speed: 800
+        });
+
+
+      });
+    </script>
 
   </head>
 
   <body>
 
     <header>
-          <div id="Titulo">M.E. & Asociados</div>
-          <figure id="logo"></figure>
-          <div id="AYC">Auditores Consultores</div>
+          <div id="Titulo">
+            <div id="Letrero">Montenegro Escobar & Asociados</div>
+            <div id="AYC">Auditores Consultores</div>   
+          </div>
+          <div id="logo"></div>
      </header><!-- END header -->
 
-    <nav id="Navbar">
-      <ul>
-          <li id="ser"><a href="servicios.html">SERVICIOS</a></li>
-          <li id="ini"><a href="http://www.measociados.net/">INICIO</a></li>
-          <li id="cont"><a id="CONTACTENOS" href="contactenos.html">CONTACTENOS</a></li>
-      </ul>
-    </nav><!-- END nav -->
+
 
     <section id="Conteiner">
 
+    <aside id = "Nav1"></aside>
 
-<div id="slidorion" class="slidorion">
-    <div class="slider">
-      <div class="slide"><img src="../IMG/pres1.jpg" /></div>
-      <div class="slide"><img src="../IMG/pres2.jpg" /></div>
-      <div class="slide"><img src="../IMG/pres3.jpg" /></div>
-    </div>
+    <section id = "Slide1">
 
-    <div class="accordion">
-      <div class="header">Mision y Vision</div>
-      <div class="content">
-        <p>Muhammad Ali (born Cassius Marcellus Clay, Jr.) is an American former professional boxer, philanthropist and social activist. Nicknamed "The Greatest", and widely considered the best heavyweight of all-time, Ali was involved in several historic boxing matches.</p>
-        <p>Ali become the first and only three-time lineal World Heavyweight Champion.</p>
+    <ul class="rslides" id="slider1">
+      <li>
+        <img src="../IMG/pres1.jpg" alt="">
+        <span class = "S1" id="img1">Ofreciendo servicios profecionales de:</span>
+        <span class = "S2" id="img1">Fiscalizacion, Contabilidad, Auditoria, Impuestos</span>
+      </li>
+      <li>
+        <img src="../IMG/pres2.jpg" alt="">
+        <span class = "S1" id="img2">Permitamos Ayudarle</span>
+        <span class = "S2" id="img2">20 años de experiencia nos respaldan</span>
+      </li>
+      <li>
+        <img src="../IMG/pres3.jpg" alt="">
+        <span class = "S1" id="img3">Comprometidos en brindales un Servicio</span>
+        <span class = "S2" id="img3">de Calidad, Honestidad e Integridad</span>
+      </li>
+    </ul>
+
+    </section>
+
+    <aside id = "Links">
+
+      <span id="EI">Enlaces Importantes</span>
+
+      <div id = "Enlaces">
+        <a href="http://www.asamblea.gob.sv/" id="Link1"></a>
+        <a href="http://www.bcr.gob.sv/" id="Link2"></a>
+        <a href="http://www.cortedecuentas.gob.sv/" id="Link3"></a>
+        <a href="http://www.csj.gob.sv/" id="Link4"></a>
+        <a href="http://www.mh.gob.sv/" id="Link5"></a>
+        <a href="http://www.minec.gob.sv/" id="Link6"></a>
+        <a href="http://www.mtps.gob.sv/" id="Link7"></a>
       </div>
-      <div class="header">Experiencia y Calidad</div>
-      <div class="content">
-        <p>Usain Bolt is a Jamaican sprinter widely regarded as the fastest person ever. He is the first man to hold both the 100 and 200 metres world records since automatic time measurements became mandatory in 1977.</p>
-        <p>Ali become the first and only three-time lineal World Heavyweight Champion.</p>
+
+      <div id ="Social">
+        <a class="tooltip" title="WEB MAIL" href="#" id="WM">h</a>
+        <a class="tooltip" title="FACEBOOK" href="#" id="FB">w</a>
+        <a class="tooltip" title="TWITTER" href="#" id="TW">b</a>
+        <a class="tooltip" title="SKYPE" href="#" id="SK">k</a>
       </div>
-      <div class="header">Integridad y Profecionalismo</div>
-      <div class="content">
-        <p>Michael Jeffrey Jordan (MJ), is an American former professional basketball player, entrepreneur, and majority owner and chairman of the Charlotte Bobcats.</p>
-        <p>MJ's individual accolades and accomplishments include five MVP awards, fourteen NBA All-Star Game appearances and many more. He was inducted into the Basketball Hall of Fame in 2009.</p>
-      </div>
-    </div>
-  </div>
 
-
-    <section id = "Links">
-
-      <a href="http://www.asamblea.gob.sv/" id="Link1"></a>
-      <a href="http://www.bcr.gob.sv/" id="Link2"></a>
-      <a href="http://www.cortedecuentas.gob.sv/" id="Link3"></a>
-      <a href="http://www.csj.gob.sv/" id="Link4"></a>
-      <a href="http://www.mh.gob.sv/" id="Link5"></a>
-      <a href="http://www.minec.gob.sv/" id="Link6"></a>
-      <a href="http://www.mtps.gob.sv/" id="Link7"></a>
-
-    </section><!-- END Link Section -->
+    </aside><!-- END Links -->
 
 
 
@@ -85,34 +104,22 @@
     </section><!-- END Conteiner Section -->
 
     <footer>
-      <div>Montenegro Escobar y Asociados, S.A. de C.V.</div>
-      <div id="PW">Powered by <a href="http://www.pyrolitesystems.com/">PyroLite Systems</a></div>
+      <div id="PW">Montenegro Escobar y Asociados, S.A. de C.V.  Powered by <a href="http://www.pyrolitesystems.com/">PyroLite Systems</a></div>
     </footer><!-- END footer -->
 
 
 
 
-  <script src="../JS/jquery.js"></script>
-  <script src="../JS/jquery.easing.js"></script>
-  <script src="../JS/jquery.slidorion.js"></script>
-
+  
   <script>
-  $(function() {
-    $('#slidorion').slidorion();
-  });
+
+
   </script>
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-42231677-1', 'measociados.net');
-  ga('send', 'pageview');
 
-</script>
+
 
 
   </body>
