@@ -29,7 +29,7 @@ header{
 
 	height: 100px;
 	position: relative;
-	color: #CFF09E;
+	color: rgb(222,222,222);
 	display: inline-block;
 
 
@@ -56,7 +56,7 @@ display: block;
 
 #AYC{
 
-color: #A8DBA8;
+color: rgb(140,140,140);
 
 }
 #Letrero{
@@ -72,6 +72,7 @@ font-size: 40px;
 	height: 100px;
 	width: 100px;
 	display: inline-block;
+
 
 }
 
@@ -121,7 +122,7 @@ nav ul li{
 
 #Conteiner #Nav1, #Conteiner #Slide1, #Conteiner #Links{
 	margin-top: 70px;
-	border:solid 2px black;
+
 	display: inline-block;
 	vertical-align: top;
 
@@ -139,7 +140,7 @@ nav ul li{
 	background: -ms-linear-gradient(top,  rgba(11,72,107,1) 0%,rgba(11,72,107,1) 68%,rgba(0,0,0,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(11,72,107,1) 0%,rgba(11,72,107,1) 68%,rgba(0,0,0,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b486b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-	box-shadow: 5px 5px 5px 1px rgba(51,51,51,0.8);
+	box-shadow: 0px 0px 5px 1px rgba(51,51,51,0.8);
 	border-radius: 10px;
 
 }
@@ -148,7 +149,7 @@ nav ul li{
 	height: 400px;
 	width: 60%;
 	background-color: white;
-	box-shadow: 5px 5px 5px 1px rgba(51,51,51,0.8);
+	box-shadow: 0px 0px 5px 1px rgba(51,51,51,0.8);
 	border-radius: 10px;
 
 }
@@ -169,7 +170,7 @@ position: relative;
 	background: -ms-linear-gradient(top,  rgba(11,72,107,1) 0%,rgba(11,72,107,1) 68%,rgba(0,0,0,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(11,72,107,1) 0%,rgba(11,72,107,1) 68%,rgba(0,0,0,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b486b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-	box-shadow: 5px 5px 5px 1px rgba(51,51,51,0.8);
+	box-shadow: 0px 0px 5px 1px rgba(51,51,51,0.8);
 	border-radius: 10px;
 
 
@@ -186,7 +187,7 @@ position: relative;
 display: block;
 width: 100%;
 	height: 290px;
-		margin-top: 10px;
+
 
 }
 #Enlaces a{
@@ -212,8 +213,7 @@ width: 100%;
 
 #Enlaces span{
 display: block;
-margin-top: 5px;
-margin-bottom: 10px;
+
 }
 
 #Link1 {
@@ -269,6 +269,7 @@ footer{
 	font-family: 'Droid Serif', serif;
 	text-shadow: -1px -1px 2px #ffffff,1px 1px 2px #ffffff;
 	color: black;
+	
   }
 
 .S1{
@@ -284,13 +285,13 @@ footer{
   	text-align: right;
   }
 
-
-
   #EI{
-  	font-size: 20px;
+
+  	font-size: 15px;
 	font-family: 'Droid Serif', serif;
 	font-weight: 700;
-	color: #CFF09E;
+	color: rgb(222,222,222);
+
   }
 
   #Social{
@@ -306,27 +307,31 @@ footer{
   	text-decoration: none;
   	font-style: none;
   	list-style: none;
-  	color: #CFF09E;
+  	color: #aaa;
   	transition: all 0.2s;
   }
 
+
+
+
+
 #FB:hover{
   	color: rgb(60,90,154);
-  	text-shadow:-.1em -.1em 0 #fff,.1em .1em 0 #fff;
+  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
 }
 #SK:hover{
   	color: rgb(1,75,235);
-  	text-shadow:-.1em -.1em 0 #fff,.1em .1em 0 #fff;
+  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
 }
 
 #TW:hover{
   	color: rgb(2,171,236);
-  	text-shadow:-.1em -.1em 0 #fff,.1em .1em 0 #fff;
+  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
 }
 
 #WM:hover{
   	color: rgb(252,86,2);
-  	text-shadow:-.1em -.1em 0 #fff,.1em .1em 0 #fff;
+  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
 }
 
 
@@ -354,7 +359,5 @@ footer{
     position: absolute;
     z-index: 99;
     /* el triángulo inferior */
-    border: solid;
-    border-color: rgba(255,255,255, 0.2) transparent;
-    border-width: 6px 6px 0 6px;
+
   }
