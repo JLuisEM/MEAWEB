@@ -51,6 +51,7 @@ vertical-align: middle;
 
 z-index:1000;
 display: block;
+text-shadow: 1px 1px 1px #000;
 }
 
 
@@ -121,7 +122,7 @@ nav ul li{
 }
 
 #Conteiner #Nav1, #Conteiner #Slide1, #Conteiner #Links{
-	margin-top: 70px;
+	margin-top: 25px;
 
 	display: inline-block;
 	vertical-align: top;
@@ -197,7 +198,7 @@ width: 100%;
 	margin-left: auto;
 	border: 1px;
   	border-style: solid;
-  	border-radius: 10px;
+  	border-radius: 5px;
   	border-color: #CFCFCF;
   	width: 70%;
   	height: 35px;
@@ -211,9 +212,10 @@ width: 100%;
 
 }
 
-#Enlaces span{
-display: block;
+#Enlaces article{
 
+
+display: block;
 }
 
 #Link1 {
@@ -247,11 +249,11 @@ background-size: 100% 100%;
 
 footer{
 	margin-top: 10px;
-		color: #CFF09E;
+		color: #fff;
 		font-variant: bold;
 	font-size: 20px;
 	font-family: 'Droid Serif', serif;
-	text-shadow: 1px 1px 4px #aaa;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #PW{
@@ -288,9 +290,13 @@ footer{
   #EI{
 
   	font-size: 15px;
-	font-family: 'Droid Serif', serif;
+	font-family: Arial, serif;
 	font-weight: 700;
+	font-style: italic;
 	color: rgb(222,222,222);
+	margin-top: 10px;
+margin-bottom: 10px;
+text-shadow: 1px 1px 1px #000;
 
   }
 
@@ -315,49 +321,6 @@ footer{
 
 
 
-#FB:hover{
-  	color: rgb(60,90,154);
-  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
-}
-#SK:hover{
-  	color: rgb(1,75,235);
-  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
-}
-
-#TW:hover{
-  	color: rgb(2,171,236);
-  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
-}
-
-#WM:hover{
-  	color: rgb(252,86,2);
-  	text-shadow:-.01em -.01em 0 #fff,.01em .01em 0 #fff;
-}
 
 
-  .tooltip:hover:after {
-    bottom: 50px;
-    content: attr(title); /* este es el texto que será mostrado */
-    left: 0%;
-    position: absolute;
-    z-index: 98;
-    /* el formato gráfico */
-    background: rgba(255,255,255, 0.2); /* el color de fondo */
-    border-radius: 5px;
-    color: #FFF; /* el color del texto */
-    font-family: Georgia;
-    font-size: 12px;
-    padding: 5px 15px;
-    text-align: center;
-    text-shadow: 1px 1px 1px #000;
-    width: 140px;
-  }
-  .tooltip:hover:before {
-    bottom: 50px;
-    content: "";
-    left: 20%;
-    position: absolute;
-    z-index: 99;
-    /* el triángulo inferior */
 
-  }
