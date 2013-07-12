@@ -20312,3 +20312,17 @@
 127.0.0.1 - - [12/Jul/2013:15:09:13 -0600] "GET /IMG/Link6.png HTTP/1.1" 304 -
 127.0.0.1 - - [12/Jul/2013:15:12:18 -0600] "GET /CAL/julio.html HTTP/1.1" 304 -
 127.0.0.1 - - [12/Jul/2013:15:12:43 -0600] "GET /IMG/logo5.png HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:39 -0600] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:39 -0600] "GET /CSS/estilos.css HTTP/1.1" 200 7777
+127.0.0.1 - - [12/Jul/2013:15:30:39 -0600] "GET /CSS/normalize.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:39 -0600] "GET /CSS/responsiveslides.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:39 -0600] "GET /CSS/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:39 -0600] "GET /JS/calendar.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:43 -0600] "GET /calendario.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:30:43 -0600] "GET /css/style.css HTTP/1.1" 200 2822
+127.0.0.1 - - [12/Jul/2013:15:30:52 -0600] "GET /calendario.html?day=2013-06-30 HTTP/1.1" 200 540
+127.0.0.1 - - [12/Jul/2013:15:30:57 -0600] "GET /calendario.html?day=2013-09-30 HTTP/1.1" 200 540
+127.0.0.1 - - [12/Jul/2013:15:31:01 -0600] "GET /calendario.html?day=2013-10-30 HTTP/1.1" 200 540
+127.0.0.1 - - [12/Jul/2013:15:31:06 -0600] "GET /calendario.html?day=2013-10-30 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:31:46 -0600] "GET /CAL/julio.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jul/2013:15:32:26 -0600] "GET /CSS/estilos.css HTTP/1.1" 304 -
