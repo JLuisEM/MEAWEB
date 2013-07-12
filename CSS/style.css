@@ -1,0 +1,118 @@
+
+
+
+p {
+
+	margin:0 0 14px;
+
+
+}
+
+#testdiv {width:600px; margin:0px auto; border:1px solid #ccc; padding:20px 25px 12px; background:#fff}
+
+.tbox {position:absolute; display:none; padding:14px 17px; z-index:900}
+.tinner {padding:15px; -moz-border-radius:5px; border-radius:5px; background:#fff url(/IMG/preload.gif) no-repeat 50% 50%; border-right:1px solid #333; border-bottom:1px solid #333}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:800}
+.tclose {position:absolute; top:0px; right:0px; width:30px; height:30px; cursor:pointer; background:url(/IMG/close.png) no-repeat}
+.tclose:hover {background-position:0 -30px}
+
+#error {background:#ff6969; color:#fff; text-shadow:1px 1px #cf5454; border-right:1px solid #000; border-bottom:1px solid #000; padding:0}
+#error .tcontent {padding:10px 14px 11px; border:1px solid #ffb8b8; -moz-border-radius:5px; border-radius:5px}
+#success {background:#2ea125; color:#fff; text-shadow:1px 1px #1b6116; border-right:1px solid #000; border-bottom:1px solid #000; padding:10; -moz-border-radius:0; border-radius:0}
+#bluemask {background:#4195aa}
+#frameless {padding:0}
+#frameless .tclose {left:6px}
+
+.tcontent{
+border-radius: 10px;
+	text-align: left;
+	font-size: 14px;
+}
+
+
+table{
+	border-radius: 10px;
+
+
+}
+
+
+tr{
+	border-radius: 10px;
+
+}
+
+
+
+td{
+	border-radius: 10px;
+
+}
+
+tbody{
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+
+
+#acal{
+	border-radius: 15px;
+	background-color: #EFEFEF;
+	border: 2px solid black;
+	
+	text-decoration: none;
+
+	font-weight: 700;
+}
+
+
+
+
+#Calendario{
+	padding-left: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+
+
+#info{
+
+	height: 180px;
+
+}
+
+#tcalen{
+height: 50px;
+
+}
+#meses{
+
+	background: rgb(255,214,94); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,214,94,1) 0%, rgba(254,191,4,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,214,94,1)), color-stop(100%,rgba(254,191,4,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+
+}
+
+#hoy{
+
+background-color: #DEDEFF;
+
+}
+
+
+#TDS2{
+
+color: rgb(191,15,23);
+font-weight: 700;
+
+}

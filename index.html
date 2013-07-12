@@ -11,41 +11,20 @@
     <link rel="stylesheet" href="CSS/estilos.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/responsiveslides.css" />
-
-    <link rel="stylesheet" href="CSS/mdp.css" />
-
-    <link rel="stylesheet" href="CSS/jquery-ui.css" />
-    <link rel="stylesheet" href="CSS/jquery.ui.datepicker.css" />
-    <link rel="stylesheet" href="CSS/jquery.ui.theme.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
 
 
     <script src="JS/jquery.js"></script>          
     <script src="JS/responsiveslides.js"></script>
     <script src="JS/prefixfree.min.js"></script>
+    <script src="JS/calendar.js"></script>
+    <script src="JS/tinybox.js"></script>
 
-    <script src="JS/jquery.ui.core.js"></script>
-    <script src="JS/jquery.ui.datepicker.js"></script>
-    <script src="JS/jquery.ui.datepicker-es.js"></script>
-    <script src="JS/jquery-ui.multidatespicker.js"></script>
+
 
     <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic" rel="stylesheet" type="text/css">
-
-
-
-
-
-    <link rel="stylesheet" type="text/css" href="css/prettify.css">
-    <script type="text/javascript" src="js/prettify.js"></script>
-    <script type="text/javascript" src="js/lang-css.js"></script>
-    <script type="text/javascript">
-    $(function() {
-      prettyPrint();
-    });
-    </script>
-
-
 
 
 
@@ -61,21 +40,8 @@
           speed: 800
         });
 
-
       });
 
-    </script>
-
-
-    <script>
-      // You can also use "$(window).load(function() {"
-      $(function () {
-              var today = new Date();
-              var tomorrow = (new Date()).setDate(today.getDate()+1);
-              $('#disable-calendar').multiDatesPicker({
-                  addDates: [today, tomorrow],
-              });
-      });
     </script>
 
 
@@ -85,11 +51,14 @@
   <body>
 
     <header>
+      <div id="head">
           <div id="Titulo">
             <div id="Letrero">Montenegro Escobar & Asociados</div>
             <div id="AYC">Auditores Consultores</div>   
           </div>
           <div id="logo"></div>
+        </div>
+
      </header><!-- END header -->
 
     <section id="Conteiner">
@@ -109,10 +78,19 @@
     </div>
 
     <aside id = "Nav1">
-    
-    <div id="disable-calendar" class="box"></div>
 
-    <!-- <div id="datepicker"></div> -->
+      <div id="info"></div>
+
+      <div id="tcalen">
+         <article id="CT13"><br>Calendario <br> Tributario</article>
+      </div>
+      <div id="Calendario">
+        <SCRIPT  type="text/javascript">
+          //  PRINT CALENDAR
+          document.write(cal);
+        </SCRIPT>
+      </div>
+
 
     </aside>
 
@@ -135,7 +113,7 @@
         <span class = "S2" id="img3"><br>de Calidad, Honestidad e Integridad</span>
       </li>
     </ul>
-      <div id="MAILPBX">Mail: info@measociados.net ... <span>PBX:(503) 2261-0873</span></div>
+
     </section>
 
     <aside id = "Links">
@@ -152,26 +130,21 @@
         <a href="http://www.mtps.gob.sv/" id="Link7"></a>
       </div>
 
-
-
     </aside><!-- END Links -->
 
 
 
-    </section><!-- END Conteiner Section -->
-
     <footer>
-      <div id="PW">Montenegro Escobar y Asociados, S.A. de C.V. Powered by <a href="http://www.pyrolitesystems.com/">PyroLite Systems</a> </div>
+      <div id="MAILPBX">e-Mail: info@measociados.net ... <span>PBX:(503) 2261-0873</span>  ...  © Copyright 2013
+      <div id="PW">Montenegro Escobar y Asociados, S.A. de C.V.  ...  Powered by <a href="http://www.pyrolitesystems.com/">PyroLite Systems</a> </div>
+
+      </div>
+
     </footer><!-- END footer -->
 
 
+    </section><!-- END Conteiner Section -->
 
-
-  
-  <script>
-
-
-  </script>
 
 
 <!-- Somos un staff profesional con amplia experiencia y reconocido prestigio en nuestro medio en el ejercicio profesional de la contaduria pública, consultoría y asesoría de negocios, permitiendo brindar un servicio integral y eficiente, basado en la confianza, compromiso con los clientes, una atención personalizada y entrega disciplinada de soluciones. establecida de acuerdo a las leyes salvadoreñas, inscrita en el Consejo de Vigilancia de la Profesión de la Contaduría Pública y Auditoría con el número XXXX. -->
